@@ -4,7 +4,7 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("SqlServerConnection");
+var connectionString = builder.Configuration.GetConnectionString("AwsSqlServerConnection");
 
 builder.Services.AddDbContext<DataContext>(option => option.UseSqlServer(connectionString));
 

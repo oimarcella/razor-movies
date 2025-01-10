@@ -60,3 +60,6 @@ D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\obj\Debug\net8.0\refint\FilmesFront
 D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\obj\Debug\net8.0\FilmesFrontend.pdb
 D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\obj\Debug\net8.0\FilmesFrontend.genruntimeconfig.cache
 D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\obj\Debug\net8.0\ref\FilmesFrontend.dll
+D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\bin\Debug\net8.0\FilmesFrontend.staticwebassets.endpoints.json
+D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Pessoal\projetos\FilmesAPI\FilmesFrontend\obj\Debug\net8.0\staticwebassets\msbuild.FilmesFrontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
