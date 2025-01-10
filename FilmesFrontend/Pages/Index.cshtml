@@ -1,0 +1,33 @@
+﻿@page
+@inject HttpClient httpClient
+@model IndexModel
+@{
+    ViewData["Title"] = "Início";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+</head>
+
+<section id="hero">
+    <div class="board-grid">
+        @foreach (var cover in Model.ListMovieCovers)
+        {
+            <div class="item" style="background-image: url('@cover')">
+            </div>
+        }
+    </div>
+    <div class="container d-flex align-items-center justify-content-center wrapper text-center">
+        <h1>SCF Filmes</h1>
+    </div>
+</section>
+
+<div class="container">
+    <ul>
+        @foreach(var filme in Model.Filmes)
+        {
+            <li>@filme.Titulo</li>
+        }
+    </ul>
+</div>
+

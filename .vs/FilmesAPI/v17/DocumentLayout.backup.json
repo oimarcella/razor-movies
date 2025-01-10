@@ -3,57 +3,107 @@
   "WorkspaceRootPath": "D:\\Pessoal\\projetos\\FilmesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A692E61B-5AD1-4537-93DF-3BE580CCB577}|FilmesAPI\\FilmesAPI.csproj|d:\\pessoal\\projetos\\filmesapi\\filmesapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A692E61B-5AD1-4537-93DF-3BE580CCB577}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|d:\\pessoal\\projetos\\filmesapi\\filmesfrontend\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|solutionrelative:filmesfrontend\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A692E61B-5AD1-4537-93DF-3BE580CCB577}|FilmesAPI\\FilmesAPI.csproj|d:\\pessoal\\projetos\\filmesapi\\filmesapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A692E61B-5AD1-4537-93DF-3BE580CCB577}|FilmesAPI\\FilmesAPI.csproj|solutionrelative:filmesapi\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|d:\\pessoal\\projetos\\filmesapi\\filmesfrontend\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|solutionrelative:filmesfrontend\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|d:\\pessoal\\projetos\\filmesapi\\filmesfrontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|solutionrelative:filmesfrontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|d:\\pessoal\\projetos\\filmesapi\\filmesfrontend\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{47C2538E-A0E2-4BDE-9CE8-E9F0450D2DE4}|FilmesFrontend\\FilmesFrontend.csproj|solutionrelative:filmesfrontend\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 448,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 19,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesAPI\\.gitignore",
-              "RelativeDocumentMoniker": "FilmesAPI\\.gitignore",
-              "ToolTip": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesAPI\\.gitignore",
-              "RelativeToolTip": "FilmesAPI\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-11-04T17:43:12.804Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FilmesFrontend\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FilmesFrontend\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T21:04:04.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FilmesFrontend\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FilmesFrontend\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-13T21:00:44.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.css",
+              "DocumentMoniker": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\wwwroot\\css\\Index.css",
+              "RelativeDocumentMoniker": "FilmesFrontend\\wwwroot\\css\\Index.css",
+              "ToolTip": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\wwwroot\\css\\Index.css",
+              "RelativeToolTip": "FilmesFrontend\\wwwroot\\css\\Index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-13T20:35:04.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesAPI\\README.md",
-              "RelativeDocumentMoniker": "FilmesAPI\\README.md",
-              "ToolTip": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesAPI\\README.md",
-              "RelativeToolTip": "FilmesAPI\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-11-04T17:25:57.321Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "FilmesFrontend\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesFrontend\\Pages\\Index.cshtml",
+              "RelativeToolTip": "FilmesFrontend\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T19:19:15.647Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 448,
+          "DockedWidth": 43,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 31,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 52,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -67,15 +117,11 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         },
         {
-          "DockedHeight": 354,
+          "DockedWidth": 52,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -93,7 +139,7 @@
           ]
         },
         {
-          "DockedHeight": 957,
+          "DockedWidth": 52,
           "SelectedChildIndex": -1,
           "Children": [
             {

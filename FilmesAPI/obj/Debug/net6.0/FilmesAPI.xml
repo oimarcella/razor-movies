@@ -56,7 +56,8 @@
             <summary>
             Atualiza parte dos dados de um filme buscado pelo seu id
             </summary>
-            <param name="filmeEditado">Filme editado</param>
+            <param name="id">Id do filme a ser editado</param>
+            <param name="patchFilme">Campos a serem editados</param>
             <returns>IActionResult</returns>
             <response code="204">Caso editado com sucesso</response>
         </member>
