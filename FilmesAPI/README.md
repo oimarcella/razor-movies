@@ -1,57 +1,45 @@
 # FilmesAPI
 
-Este projeto é um **ASP.NET Web API** para gerenciar filmes, desenvolvida em C# com ASP.NET Core. A API permite operações de CRUD para filmes e utiliza o AutoMapper para mapear dados entre diferentes modelos.
+Este projeto Ã© um **ASP.NET Web API** para gerenciar filmes, desenvolvida em C# com ASP.NET Core. A API permite operaÃ§Ãµes de CRUD para filmes e utiliza o AutoMapper para mapear dados entre diferentes modelos.
 
 
-## Tecnologias Utilizadas
+### Tecnologias Utilizadas
 - ASP.NET Core
 - Entity Framework Core
 - AutoMapper
 - Swagger
 
-## Swagger
-A página para consulta da documentação da API fica em http://localhost:<SUA_PORTA>/swagger no meu caso http://localhost:7037/swagger
+### Endpoints
 
-![Documentação via Swagger](./print-swagger.png)
+A API disponibiliza endpoints para operaÃ§Ãµes de CRUD (Create, Read, Update, Delete) nos filmes. VocÃª pode usar o Swagger para testar os endpoints.
+A base da url da API estÃ¡ configurada, localmente, em `https://localhost:7037/`.
 
+### Como Executar
 
-## Estrutura do Projeto
-
-Abaixo está a estrutura principal do projeto:
-
-- **AutoMapProfiles**: Contém os perfis do AutoMapper para mapeamento de objetos, facilitando a conversão entre entidades e DTOs.
-  - `Profiles.cs`: Define as configurações de mapeamento do AutoMapper.
-
-- **Controllers**
-  - `FilmeController.cs`: Controlador principal para as operações de CRUD dos filmes.
-
-- **Data**
-  - `DataContext.cs`: Classe de contexto do Entity Framework, responsável por configurar o banco de dados e definir as DbSets das entidades, como `Filme`.
-  - Arquivos de migração: Usados para criar e atualizar o esquema do banco de dados.
-
-- **Dtos (Data Transfer Objects)**
-  - `CreateFilmeDto.cs`: DTO para criação de novos filmes, especificando apenas os campos necessários.
-  - `UpdateFilmeDto.cs`: DTO para atualização de filmes, permitindo a modificação de dados específicos.
-
-- **Models**
-  - `Filme.cs`: Modelo principal que representa a entidade Filme.
-
-## Pré-requisitos
-
-- .NET 6 SDK ou superior
-- Entity Framework Core
-
-## Endpoints
-
-A API disponibiliza endpoints para operações de CRUD (Create, Read, Update, Delete) nos filmes. Você pode usar o Swagger para testar os endpoints.
-
-## Como Executar
-
-1. Clone o repositório.
-2. Configure as conexões de banco de dados em `appsettings.json`.
-3. Execute o comando abaixo para aplicar as migrações e criar o banco de dados:
+1. Clone o repositÃ³rio.
+2. Configure as conexÃµes de banco de dados em `appsettings.json`.
+3. Execute o comando abaixo para aplicar as migraÃ§Ãµes e criar o banco de dados:
    ```bash
    dotnet ef database update   
-4. Execute o comando abaixo  para dar start na aplicação:
+4. Execute o comando abaixo  para dar start na aplicaÃ§Ã£o:
    ```bash
    dotnet run
+
+   
+
+# Outras InformaÃ§Ãµes 
+
+### Swagger
+A pÃ¡gina para consulta da documentaÃ§Ã£o da API fica em http://localhost:<SUA_PORTA>/swagger no meu caso http://localhost:7037/swagger
+
+![DocumentaÃ§Ã£o via Swagger](./print-swagger.png)
+
+### ConfiguraÃ§Ã£o de Arquivos de Ambiente:**
+   - Foi implementado o uso de arquivos **appsettings.json** separados para diferentes ambientes (`Development`e `Production`.).
+   - Um exemplo de configuraÃ§Ã£o foi adicionado em `appsettings.Example.json` para servir de template para a configuraÃ§Ã£o sem expor dados sensÃ­veis.
+
+### ProteÃ§Ã£o de Dados SensÃ­veis 
+   - Os arquivos `appsettings.json` e `appsettings.Development.json` foram adicionados ao `.gitignore` para evitar que informaÃ§Ãµes sensÃ­veis, como strings de conexÃ£o, sejam enviadas ao repositÃ³rio.
+
+### Popular Banco de Dados
+   - Criado um script SQL para popular a tabela **Filmes** com registros iniciais (pensado mais para o banco local). O arquivo pode ser encontrado em `FilmesAPI/SeedSql.sql`.
