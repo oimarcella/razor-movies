@@ -1,9 +1,5 @@
 using FilmesFrontend.Middleware;
 using FilmesFrontend.Services;
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using System.Net.Sockets;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +8,8 @@ builder.Services.AddRazorPages();
  /*Add HttpClient to dependencies, creating and injecting a configured instance of HttpClient into ApiService*/
 builder.Services.AddHttpClient<ApiService>(client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7037");
+    client.BaseAddress = new Uri("http://filmes-backend:81"); /*Conectando ao container do backend*/
+    //client.BaseAddress = new Uri("http://localhost:7037"); /*Backend running localhost (no container)*/
 });
 
 var app = builder.Build();
