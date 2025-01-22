@@ -9,7 +9,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddHttpClient<ApiService>(client =>
 {
     client.BaseAddress = new Uri("http://filmes-backend:81"); /*Conectando ao container do backend*/
-    //client.BaseAddress = new Uri("http://localhost:7037"); /*Backend running localhost (no container)*/
+    /*client.BaseAddress = new Uri("http://localhost:7037");*/ /*Backend running localhost (no container)*/
 });
 
 var app = builder.Build();

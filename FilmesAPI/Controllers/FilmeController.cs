@@ -73,7 +73,15 @@ public class FilmeController : ControllerBase
     {
         try
         {
-            return Ok(await _context.Filmes.Skip((page - 1) * take).Take(take).ToListAsync());
+            var TotalFilmes = await  _context.Filmes.CountAsync();
+
+            return Ok(new
+            {
+                Filmes = await _context.Filmes.Skip((page - 1) * take).Take(take).ToListAsync(),
+                TotalPaginas = (int)Math.Ceiling((double)TotalFilmes / take),
+                PaginaAtual = page
+            }
+            );
         }
         catch (Exception ex)
         {

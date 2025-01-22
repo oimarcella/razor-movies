@@ -9,7 +9,6 @@ public class IndexModel : PageModel
     private readonly ILogger<IndexModel> _logger;
     private readonly ApiService _api;
     public List<Filme> Filmes { get; set; } = new List<Filme>();
-
     public List<string> ListMovieCovers = new List<string>
     {
         "https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg", // Mulher-Maravilha 1984
@@ -41,6 +40,9 @@ public class IndexModel : PageModel
     "https://image.tmdb.org/t/p/w500/cCTJPelKGLhALq3r51A9uMonxKj.jpg", // Mulan
     "https://image.tmdb.org/t/p/w500/4gKyQ1McHa8ZKDsYoyKQSevF01J.jpg", // Viúva Negra
     };
+    public int TotalPaginas { get; set; } = 0;
+    public int PaginaAtual { get; set; } = 1;
+
 
 
     public IndexModel(ILogger<IndexModel> logger, ApiService apiServiceHttp)
@@ -49,13 +51,15 @@ public class IndexModel : PageModel
         _api = apiServiceHttp;
     }
 
-    public async Task OnGetAsync()
+    public async Task OnGetAsync(int numeroFilmes = 5, int pagina = 1)
     {
-        var response = await _api.RequestApiAsync<List<Filme>>("/filme");
+        var response = await _api.RequestApiAsync<ListarFilmesPaginados>($"/filme/{numeroFilmes}/{pagina}");
 
         if (response != null)
         {
-            Filmes = response;
+            Filmes = response.Filmes;
+            TotalPaginas = response.TotalPaginas;
+            PaginaAtual = response.PaginaAtual;
         }
     }
 }

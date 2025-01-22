@@ -4,9 +4,18 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("AwsSqlServerConnection");
+var connectionString = builder.Configuration.GetConnectionString("Db_SqlServerConnection");
 
-builder.Services.AddDbContext<DataContext>(option => option.UseSqlServer(connectionString));
+if (string.IsNullOrEmpty(connectionString))
+{
+    Console.WriteLine(connectionString);
+    throw new InvalidOperationException("Connection string wasn't incorrect.");
+}
+
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseSqlServer(connectionString, sqlOptions =>
+        sqlOptions.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null)
+));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllers().AddNewtonsoftJson();/*to handle PATCH requests*/

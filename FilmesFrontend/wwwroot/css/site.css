@@ -25,6 +25,10 @@ body {
     box-sizing: border-box;
 }
 
+*:hover{
+    transition: ease-in-out all .3s;
+}
+
 a {
     text-decoration: none;
 }
@@ -49,13 +53,29 @@ header {
     background: #12183f;
 }
 
-    header .nav-link,
-    header a {
-        color: #FFF;
-    }
+header .nav-link,
+header a {
+    color: #FFF;
+}
+
+header .text-logo{
+    color: #ffd543;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: "Share Tech", serif;
+    border-bottom: 3px solid #ffd543;
+    user-select: none;
+}
+
+.section-padding{
+    padding: 90px 0;
+}
 
 @media(max-width: 1000px) {
     .page-default {
         padding: 40px;
+    }
+    .section-padding {
+        padding: 40px 0;
     }
 }

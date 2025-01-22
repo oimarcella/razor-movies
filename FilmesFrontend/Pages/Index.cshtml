@@ -22,12 +22,22 @@
     </div>
 </section>
 
-<div class="container">
-    <ul>
-        @foreach(var filme in Model.Filmes)
+<section id="descubra" class="section-padding">
+    <div class="container">
+        <div class="d-flex align-items-start justify-content-start">
+            @foreach(var filme in Model.Filmes)
+            {
+                <div class="item">@filme.Titulo</div>
+            }
+        </div>
+    </div>
+
+    <div id="paginacao" class="d-flex align-items-center justify-content-center">
+        @for (int i = 1; i <= Model.TotalPaginas; i++)
         {
-            <li>@filme.Titulo</li>
+            <a href="@Url.Page("Index", new { pagina = i })">@i</a>
         }
-    </ul>
-</div>
+    </div>
+</section>
+
 
