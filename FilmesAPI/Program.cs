@@ -4,12 +4,12 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("Db_SqlServerConnection");
+var connectionString = builder.Configuration.GetConnectionString("Db_SqlServerConnectionLocal");
 
 if (string.IsNullOrEmpty(connectionString))
 {
     Console.WriteLine(connectionString);
-    throw new InvalidOperationException("Connection string wasn't incorrect.");
+    throw new InvalidOperationException("Connection string inválida.");
 }
 
 builder.Services.AddDbContext<DataContext>(options =>

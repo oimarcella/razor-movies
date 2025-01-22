@@ -21,6 +21,7 @@ public class CustomExceptionMiddleware
         }
         catch (Exception ex) when (ex is UnauthorizedAccessException)
         {
+            var statusCode = Uri.EscapeDataString(context.Response.StatusCode.ToString());
             context.Response.StatusCode = 403;
 
             var mensagemErro = Uri.EscapeDataString("Recurso restrito.");
@@ -28,6 +29,7 @@ public class CustomExceptionMiddleware
         }
         catch (Exception ex) when (ex is SocketException || ex is HttpRequestException)
         {
+            var statusCode = Uri.EscapeDataString(context.Response.StatusCode.ToString());
             // Define status 503 para erro de conexão
             context.Response.StatusCode = 503;
 
@@ -36,10 +38,11 @@ public class CustomExceptionMiddleware
             var detailsErrorException = Uri.EscapeDataString(ex.ToString());
 
             // Redireciona para a página /erro-interno com os detalhes da exceção
-            context.Response.Redirect($"/servico-indisponivel?message={errorMessageException}&details={detailsErrorException}");
+            context.Response.Redirect($"/servico-indisponivel?message={errorMessageException}&details={detailsErrorException}&status={statusCode}");
         }
         catch (Exception ex)
         {
+            var statusCode = Uri.EscapeDataString(context.Response.StatusCode.ToString());
             // Define o status como 500 para outras exceções genéricas
             context.Response.StatusCode = 500;
 
@@ -48,7 +51,7 @@ public class CustomExceptionMiddleware
             var detailsErrorException = Uri.EscapeDataString(ex.ToString());
 
             // Redireciona para a página de erro genérica
-            context.Response.Redirect($"/erro?message={errorMessageException}&details={detailsErrorException}");
+            context.Response.Redirect($"/erro?message={errorMessageException}&details={detailsErrorException}&status={statusCode}");
         }
     }
 }

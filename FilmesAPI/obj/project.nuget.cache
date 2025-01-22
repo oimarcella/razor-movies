@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NWY8TMXibJ4=",
+  "dgSpecHash": "VS/4IAsczuE=",
   "success": true,
-  "projectFilePath": "D:\\Pessoal\\projetos\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
+  "projectFilePath": "D:\\pessoal\\projetos\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcella\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Marcella\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

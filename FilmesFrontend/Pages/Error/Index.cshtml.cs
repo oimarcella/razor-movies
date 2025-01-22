@@ -6,20 +6,20 @@ namespace FilmesFrontend.Pages.Error;
 public class IndexModel : ErrorPageBase
 {
     [FromRoute]
-    public int? StatusCode { get; set; }
-
+    public bool IsNotFoundStatus { get; set; } = false;
     public IndexModel(IWebHostEnvironment environment) : base(environment)
     {}
 
-    public override void OnGet(string message, string details)
+    public override void OnGet(string message, string details, int statusCode)
     {
-        base.OnGet(message, details);
-        if(StatusCode != null)
+        base.OnGet(message, details, statusCode);
+
+        if(Statuscode != 0)
         {
-            ErrorMessage = StatusCode switch
+            if(Statuscode == 404)
             {
-                404 => "Nada por aqui!",
-                _ => ErrorMessage
+                IsNotFoundStatus = true;
+                ErrorMessage = "Nada por aqui!";
             };
         }
     }        
