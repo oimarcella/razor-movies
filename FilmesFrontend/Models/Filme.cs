@@ -10,18 +10,18 @@ public class Filme
     [Required(ErrorMessage = "Preencha o nome")]
     [MaxLength(50)]
     [RegularExpression(@"^[a-zA-Z0-9\sçáéíóúãõâêîôû]+$", ErrorMessage = "Não deve ter caracteres especiais")]
-    public string Titulo { get; set; }
+    public string Titulo { get; set; } = String.Empty;
 
     [Required(ErrorMessage = "Preencha gênero")]
     [RegularExpression(@"^[a-zA-Z0-9\sçáéíóúãõâêîôû]+$", ErrorMessage = "Não deve ter caracteres especiais")]
     [MaxLength(50)]
-    public string Genero { get; set; }
+    public string Genero { get; set; } = String.Empty;
 
     [Required(ErrorMessage = "Preencha a sinopse")]
     [MaxLength(150)]
-    public string Sinopse { get; set; }
+    public string Sinopse { get; set; } = String.Empty;
 
     [Required(ErrorMessage = "Preencha a duração")]
     [Range(70, 240, ErrorMessage = "Duração precisa ser de 70 a 240 minutos")]
-    public int Duracao { get; set; }
+    public int Duracao { get; set; } = 0;
 }

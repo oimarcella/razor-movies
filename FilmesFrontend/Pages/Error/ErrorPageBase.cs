@@ -7,7 +7,7 @@ namespace FilmesFrontend.Pages.Error
     {
         private readonly IWebHostEnvironment _environment;
         public bool IsDevelopment { get; private set; }
-        public string ErrorMessage { get; set; }
+        public string? ErrorMessage { get; set; }
         [TempData]
         public string ErrorDetails { get; set; } = "";
         public int Statuscode { get; set; }

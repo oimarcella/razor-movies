@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using FilmesFrontend.Models;
 using FilmesFrontend.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesFrontend.Pages;
 
@@ -43,7 +44,8 @@ public class IndexModel : PageModel
     public int TotalPaginas { get; set; } = 0;
     public int PaginaAtual { get; set; } = 1;
 
-
+    [BindProperty(SupportsGet = true)]
+    public int NumeroFilmesPorPagina { get; set; } = 5;
 
     public IndexModel(ILogger<IndexModel> logger, ApiService apiServiceHttp)
     {
@@ -51,9 +53,9 @@ public class IndexModel : PageModel
         _api = apiServiceHttp;
     }
 
-    public async Task OnGetAsync(int numeroFilmes = 5, int pagina = 1)
+    public async Task OnGetAsync(int pagina = 1)
     {
-        var response = await _api.RequestApiAsync<ListarFilmesPaginados>($"/filme/{numeroFilmes}/{pagina}");
+        var response = await _api.RequestApiAsync<ListarFilmesPaginados>($"/filme/{NumeroFilmesPorPagina}/{pagina}");
 
         if (response != null)
         {

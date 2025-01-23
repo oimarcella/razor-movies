@@ -1,6 +1,8 @@
 using FilmesFrontend.Middleware;
 using FilmesFrontend.Services;
 
+#pragma warning disable CS0219  // Desabilita o aviso de variável não utilizada
+
 const string BACKEND_COMPOSE = "http://filmes-backend:81"; /*Backend running docker*/
 const string BACKEND_LOCAL = "https://localhost:7037"; /*Backend running localhost*/
 

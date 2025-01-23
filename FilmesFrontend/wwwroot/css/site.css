@@ -40,6 +40,13 @@ li {
 ul {
     padding: 0;
 }
+form{
+    width: 100%;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
 
 button {
     cursor: pointer;
