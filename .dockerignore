@@ -1,0 +1,12 @@
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.log
+*.cache
+*.vs
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+docker-compose.yml
